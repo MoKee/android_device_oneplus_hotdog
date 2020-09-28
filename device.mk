@@ -12,10 +12,10 @@ $(call inherit-product, vendor/oneplus/hotdog/hotdog-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-mokee
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+    $(LOCAL_PATH)/overlay-mokee/mokee-sdk
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -31,8 +31,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    vendor.lineage.camera.motor@1.0 \
-    vendor.lineage.camera.motor@1.0-service.oneplus_msmnile \
+    vendor.mokee.camera.motor@1.0 \
+    vendor.mokee.camera.motor@1.0-service.oneplus_msmnile \
     OnePlusCameraHelper
 
 # Device init scripts
